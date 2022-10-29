@@ -14,6 +14,7 @@ There are many future applications of this project. Currently, the program detec
 ## Plan to Advance this Project
 After conversing with NBA team 76ers President, Daryl Morey, a commercial implementation of a computer vision basketball referees by the NBA or NCAA will need some major improvements, which I am actively working on. Currently, the detection of the basketball is done with a color mask set with pre-defined HSV values based on experimental data. This will not work in enviorrment, meaning that a different method of detecting the ball is required such as training a custom machine learning model and use pose estimations and object detection. Also, using a pedometer is impratical with 10 players on a court. A solution is using computer vision to detect jersey numbers and player faces to understand who has the ball and train a machine learning model to detect their steps. On this scale, we would need to stream many camera angles, which is conviently already avaiable at the NBA and NCAA games.
 
-
+## News References:
+https://www.hackster.io/news/ai-basketball-referee-detects-traveling-ed1ed45f8ccd
 
 

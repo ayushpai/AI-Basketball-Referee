@@ -1,6 +1,6 @@
 """
     PROJECT 01
-    COP 3504C
+    COP 3504c
     Ayush Pai
 """
 

@@ -1,4 +1,4 @@
-# Computer Vison-Based Basketball Referee
+# AI Basketball Referee
 
 ## Purpose
 Sports are evolving day by day and the technology that supports these sports are evolving at an exponential rate. Many sports have implemented computer vision in order to improve referee calls and the overall fairness of the game. Tennis uses cameras to detect if a ball is out, Track and Field use cameras to detect who won a race, and many more. One sport however that has failed to do so on a significant scale is basketball. On top of that, basketball is one of the sports that is notorious for championship-changing, egregious referee calls. Implementing computer vision to watch over basketball games can not only make the game a much more fair experience for players and fans but also be a way of collecting data to use for greater machine learning models and statistics.

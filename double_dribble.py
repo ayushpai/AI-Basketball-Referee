@@ -13,7 +13,7 @@ class DoubleDribbleDetector:
         # Load YOLO (You Only Look Once), a popular object detection model.
         # One model is trained for pose estimation, and the other for detecting the basketball.
         self.pose_model = YOLO("yolov8s-pose.pt")
-        self.ball_model = YOLO("best17.pt")
+        self.ball_model = YOLO("basketballModel.pt")
 
         # Initialize the video capture object to capture video from the default camera.
         self.cap = cv2.VideoCapture(0)

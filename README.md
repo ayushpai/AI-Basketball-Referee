@@ -3,16 +3,30 @@
 ## Purpose
 Sports are evolving day by day and the technology that supports these sports are evolving at an exponential rate. Many sports have implemented computer vision in order to improve referee calls and the overall fairness of the game. Tennis uses cameras to detect if a ball is out, Track and Field use cameras to detect who won a race, and many more. One sport however that has failed to do so on a significant scale is basketball. On top of that, basketball is one of the sports that is notorious for championship-changing, egregious referee calls. Implementing computer vision to watch over basketball games can not only make the game a much more fair experience for players and fans but also be a way of collecting data to use for greater machine learning models and statistics.
 
-**Demo Video:** https://youtu.be/3UeoKxw8UYs
+**Demo Video:** [https://youtu.be/3UeoKxw8UYs](https://youtu.be/VZgXUBi_wkM)
 
-## An Evolving Project
-This project is the first step towards that goal. I developed a computer vision-based basketball referee to detect if a player travels in a game of basketball. Using OpenCV libraries, I was able to track a ball using color masking, pixel arrays, and post-processing kernels to create a real-time ball tracker. Utilizing the X/Y coordinates, I was able to figure out the radius and center point of the ball. Then using an android app as a pedometer, I was able to detect the real-time steps of a player. Comparing the real-time dribbles with real-time steps, the program can detect travels.
+**How it works**
+The AI Basketball Referee is a computer vision-based system that uses a custom YOLO (You Only Look Once) machine learning model trained on 3000 annotated images to detect basketballs in real-time. Additionally, it utilizes YOLO pose estimation to detect keypoints on the body of the players. By combining these two techniques, the AI Basketball Referee is capable of accurately identifying travels and double dribbles in basketball games.
 
-## Future of This Project
-There are many future applications for this project. Currently, the program detects travel, one aspect of basketball violations. Other similar easily implementable applications include double dribble detection, carry detection, stepping out of bounds, and accounting for gather steps. More advanced applications include technical-foul detection and time violations.
+**Basketball Detection**
+The first step in the AI Basketball Referee's process is basketball detection. The YOLO machine learning model is trained to recognize basketballs within the video frames. It has been trained on a diverse dataset of 3000 annotated images containing various basketball poses, lighting conditions, and backgrounds. During runtime, the model analyzes each frame in real-time and predicts bounding boxes around the detected basketballs.
 
-## Plan to Advance this Project
-After conversing with **NBA Team 76ers President, Daryl Morey**, a commercial implementation of computer vision basketball referees by the NBA or NCAA will need some major improvements, which I am actively working on. Currently, the detection of the basketball is done with a color mask set with pre-defined HSV values based on experimental data. This will not work in all environments due to variations in lighting, meaning that a different method of detecting the ball is required such as training a custom machine learning model and using pose estimations and object detection. Also, using a pedometer to detect steps is impractical with 10 players on a court. A solution is using computer vision to detect jersey numbers and player faces to understand who has the ball and train a machine learning model to detect their steps. On this scale, we would need to stream many camera angles, which are conveniently already available at the NBA and NCAA games.
+**Pose Estimation**
+To enable the detection of travels and double dribbles, the AI Basketball Referee also employs YOLO pose estimation. This technique allows the system to identify and track keypoints on the body of the players. Key body joints such as the ankles, knees, hips, elbows, and wrists are crucial for determining player movements accurately.
+
+**Travel Detection**
+Once the basketballs and player keypoints are detected, the AI Basketball Referee applies a set of predefined rules to determine if a travel violation has occurred. By analyzing the position and movement of the player's keypoints over consecutive frames, the system can detect instances where a player has taken steps without dribbling the ball or has moved more than the allowed distance without dribbling or passing.
+
+**Double Dribble Detection**
+Similarly, the AI Basketball Referee leverages the detected basketballs and player keypoints to identify double dribbles. By tracking the position and movement of the player's keypoints and analyzing the interactions with the basketball, the system can detect situations where a player dribbles the ball, stops, and then starts dribbling again without another player touching or possessing the ball in the meantime.
+
+**Real-time Feedback**
+The AI Basketball Referee provides real-time feedback on travel and double dribble violations during basketball games. It highlights the detected violations on the video feed, making it easy for referees or users to identify and assess the accuracy of the system's decisions. Additionally, the system can generate logs or alerts to record detected violations for further analysis or review.
+
+**Customizability and Expansion**
+The AI Basketball Referee has been designed to be customizable and expandable. Users can fine-tune the system's parameters, such as the detection threshold for basketballs and the sensitivity of travel and double dribble detection, to suit their specific requirements. Furthermore, additional rules and detection capabilities can be incorporated into the system to address other basketball violations or game situations.
+
+Overall, the AI Basketball Referee combines state-of-the-art computer vision techniques, including YOLO object detection and pose estimation, to accurately detect travels and double dribbles in real-time basketball games. It provides a valuable tool for referees, coaches, and players to analyze gameplay, improve player performance, and enhance the overall fairness of basketball matches.
 
 ## In The News:
 https://www.hackster.io/news/ai-basketball-referee-detects-traveling-ed1ed45f8ccd

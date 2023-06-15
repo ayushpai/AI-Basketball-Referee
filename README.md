@@ -1,4 +1,4 @@
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=VZgXUBi_wkM)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/VZgXUBi_wkM/0.jpg)](https://www.youtube.com/watch?v=VZgXUBi_wkM)
 
 
 # AI Basketball Referee v2.0

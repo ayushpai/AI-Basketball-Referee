@@ -9,7 +9,7 @@ import os
 import time
 
 # Load the YOLO models
-ball_model = YOLO("/Users/ayushpai/Desktop/yolov8_custom/best17.pt")
+ball_model = YOLO("basketballModel.pt")
 pose_model = YOLO("yolov8s-pose.pt")
 
 # Open the webcam

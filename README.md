@@ -1,9 +1,11 @@
 # AI Basketball Referee v2.0
 
+## Demo Video
+[![Youtube Video Demo](https://img.youtube.com/vi/VZgXUBi_wkM/0.jpg)](https://www.youtube.com/watch?v=VZgXUBi_wkM)
+
+
 ## Purpose
 Sports are evolving day by day and the technology that supports these sports are evolving at an exponential rate. Many sports have implemented computer vision in order to improve referee calls and the overall fairness of the game. Tennis uses cameras to detect if a ball is out, Track and Field use cameras to detect who won a race, and many more. One sport however that has failed to do so on a significant scale is basketball. On top of that, basketball is one of the sports that is notorious for championship-changing, egregious referee calls. Implementing computer vision to watch over basketball games can not only make the game a much more fair experience for players and fans but also be a way of collecting data to use for greater machine learning models and statistics.
-
-**Demo Video:** [https://youtu.be/3UeoKxw8UYs](https://youtu.be/VZgXUBi_wkM)
 
 ## How it works
 The AI Basketball Referee is a computer vision-based system that uses a custom YOLO (You Only Look Once) machine learning model trained on 3000 annotated images to detect basketballs in real-time. Additionally, it utilizes YOLO pose estimation to detect keypoints on the body of the players. By combining these two techniques, the AI Basketball Referee is capable of accurately identifying travels and double dribbles in basketball games.

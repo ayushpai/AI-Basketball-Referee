@@ -30,5 +30,14 @@ The AI Basketball Referee has been designed to be customizable and expandable. U
 
 Overall, the AI Basketball Referee combines state-of-the-art computer vision techniques, including YOLO object detection and pose estimation, to accurately detect travels and double dribbles in real-time basketball games. It provides a valuable tool for referees, coaches, and players to analyze gameplay, improve player performance, and enhance the overall fairness of basketball matches.
 
+## Setup
+1. Clone project
+2. Open project in VSCode
+3. Create a new conda enviornment: `conda create -n exercise-tracking python=3.11`
+4. Activate conda enviorment: `conda activate exercise-tracking`
+5. Install ultralytics package: `pip install ultralytics`
+6. Run any of the Python scripts you would like to try out. `double_dribble.py` and `travel_detection.py` are the ones that provide realtime referee calls.
+7. Change the input of the video to either your webcam (`cv2.VideoCapture(0)`) or a video file with the relative path (`cv2.VideoCapture('video.mp4')`). 
+
 ## In The News:
 https://www.hackster.io/news/ai-basketball-referee-detects-traveling-ed1ed45f8ccd

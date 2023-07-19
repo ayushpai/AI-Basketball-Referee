@@ -45,3 +45,8 @@ https://drive.google.com/file/d/1e6HLRuhh1IEmxOFaxHQMxfRqhzD92t3B/view?usp=shari
 
 ## In The News:
 https://www.hackster.io/news/ai-basketball-referee-detects-traveling-ed1ed45f8ccd
+https://aifinityhub.com/2023/06/03/hoops-and-algorithms-ais-role-in-nbas-refereeing/
+https://www.fry-ai.com/p/ai-basketball-referee-days-yelling-human-officials-soon
+SingleStore Webinar https://www.singlestore.com/resources/webinar-how-to-build-an-openai-basketball-referee-system-with-computer-vision-2023-07/
+Overtime (7M+) https://www.instagram.com/reel/CtMd6LgAAMo/?igshid=ZmZiYTY5ZDNhOA%3D%3D
+Barsee AI https://twitter.com/WGMImedia/status/1664205786644455424

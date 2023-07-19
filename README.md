@@ -33,11 +33,15 @@ Overall, the AI Basketball Referee combines state-of-the-art computer vision tec
 ## Setup
 1. Clone project
 2. Open project in VSCode
-3. Create a new conda enviornment: `conda create -n exercise-tracking python=3.11`
-4. Activate conda enviorment: `conda activate exercise-tracking`
+3. Create a new conda environment: `conda create -n exercise-tracking python=3.11`
+4. Activate conda environment: `conda activate exercise-tracking`
 5. Install ultralytics package: `pip install ultralytics`
 6. Run any of the Python scripts you would like to try out. `double_dribble.py` and `travel_detection.py` are the ones that provide realtime referee calls.
-7. Change the input of the video to either your webcam (`cv2.VideoCapture(0)`) or a video file with the relative path (`cv2.VideoCapture('video.mp4')`). 
+7. Change the input of the video to either your webcam (`cv2.VideoCapture(0)`) or a video file with the relative path (`cv2.VideoCapture('video.mp4')`).
+
+## basketballModel.pt
+This file is the core to the basketball detection model. Unfortunately, the file is too big and has exceeded GitHub storage limits. Please download the file here:
+https://drive.google.com/file/d/1e6HLRuhh1IEmxOFaxHQMxfRqhzD92t3B/view?usp=sharing
 
 ## In The News:
 https://www.hackster.io/news/ai-basketball-referee-detects-traveling-ed1ed45f8ccd
